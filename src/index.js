@@ -1,17 +1,37 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { createRoot } from 'react-dom/client';
+import App from 'App';
+import { IntlProvider } from 'react-intl';
+import { RecoilRoot } from 'recoil';
+import { QueryClientProvider } from 'react-query';
+import { queryClient } from 'api/config/queryClient';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const loadLocaleData = (location) => {
+  switch (location) {
+    case 'en':
+      return import('resource/language/en.json');
+    case 'vi':
+      return import('resource/language/vi.json');
+    default:
+      return import('resource/language/en.json');
+  }
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const RootApp = async () => {
+  const location = navigator.language;
+  const message = await loadLocaleData(location);
+  const container = document.getElementById('root');
+  const root = createRoot(container);
+  root.render(
+    <React.StrictMode>
+      <RecoilRoot>
+        <QueryClientProvider client={queryClient}>
+          <IntlProvider locale={location} messages={message.default}>
+            <App />
+          </IntlProvider>
+        </QueryClientProvider>
+      </RecoilRoot>
+    </React.StrictMode>
+  );
+}
+RootApp().then();
