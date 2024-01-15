@@ -5,6 +5,9 @@ import { IntlProvider } from 'react-intl';
 import { RecoilRoot } from 'recoil';
 import { QueryClientProvider } from 'react-query';
 import { queryClient } from 'api/config/queryClient';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import GlobalStyles from 'components/GlobalStyles';
+
 
 const loadLocaleData = (location) => {
   switch (location) {
@@ -27,7 +30,9 @@ const RootApp = async () => {
       <RecoilRoot>
         <QueryClientProvider client={queryClient}>
           <IntlProvider locale={location} messages={message.default}>
-            <App />
+            <GlobalStyles>
+              <App />
+            </GlobalStyles>
           </IntlProvider>
         </QueryClientProvider>
       </RecoilRoot>
