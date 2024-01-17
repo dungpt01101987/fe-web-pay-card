@@ -2,6 +2,7 @@
   "name": "fe-web-pay-card",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://dungpt01101987.github.io/fe-web-pay-card/",
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
     "@emotion/is-prop-valid": "^1.2.1",
@@ -29,14 +30,13 @@
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.0"
   },
-  "homepage": "https://dungpt01101987.github.io/fe-web-pay-card/",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
