@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/fe-web-pay-card/static/css/main.82aaefdf.css",
+    "main.js": "/fe-web-pay-card/static/js/main.c39832e9.js",
+    "static/js/514.f233ed9d.chunk.js": "/fe-web-pay-card/static/js/514.f233ed9d.chunk.js",
+    "static/js/340.e7260273.chunk.js": "/fe-web-pay-card/static/js/340.e7260273.chunk.js",
+    "static/media/2.webp": "/fe-web-pay-card/static/media/2.425c0ae0f466df435eec.webp",
+    "static/media/1.webp": "/fe-web-pay-card/static/media/1.9e041532501852f7be26.webp",
+    "static/media/3.webp": "/fe-web-pay-card/static/media/3.48f617d5e243b7a8a086.webp",
+    "static/media/ios_info.webp": "/fe-web-pay-card/static/media/ios_info.2946aecb286faa50f829.webp",
+    "static/media/ios.webp": "/fe-web-pay-card/static/media/ios.ab5b205ca5933288ce15.webp",
+    "static/media/biaoti2.png": "/fe-web-pay-card/static/media/biaoti2.7186952d627eebbc3508.png",
+    "static/media/product.webp": "/fe-web-pay-card/static/media/product.dae66434537730e61d65.webp",
+    "index.html": "/fe-web-pay-card/index.html",
+    "main.82aaefdf.css.map": "/fe-web-pay-card/static/css/main.82aaefdf.css.map",
+    "main.c39832e9.js.map": "/fe-web-pay-card/static/js/main.c39832e9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82aaefdf.css",
+    "static/js/main.c39832e9.js"
+  ]
+}
