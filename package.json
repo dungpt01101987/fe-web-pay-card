@@ -29,7 +29,7 @@
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.0"
   },
-  "homepage": "https://dungpt01101987.github.io/fe-web-pay-card",
+  "homepage": "https://dungpt01101987.github.io/fe-web-pay-card/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
