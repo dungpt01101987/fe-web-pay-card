@@ -2,6 +2,7 @@
   "name": "fe-web-pay-card",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://dungpt01101987.github.io/fe-web-pay-card/",
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
     "@emotion/is-prop-valid": "^1.2.1",
