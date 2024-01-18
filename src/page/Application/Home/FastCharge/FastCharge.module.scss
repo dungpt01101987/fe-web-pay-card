@@ -1,9 +1,18 @@
 .charge-header {
     display: flex;
 
-    .charge-header-item {
-        box-shadow: 2px 2px 10px #1479ff80;
-        color: #fff;
+    .charge-header__item {
+        background: #dbe9f8;
+        border-radius: 25px;
+        color: #1479ff;
+        cursor: pointer;
+        flex-shrink: 0;
+        font-size: 20px;
+        height: 50px;
+        position: relative;
+        transition: .2s;
+        width: 200px;
+        word-break: break-all;
 
         &::before {
             background: #dbe9f8;
@@ -29,48 +38,43 @@
             top: 0;
         }
 
-        .charge-header-item {
-            background: #dbe9f8;
-            border-radius: 25px;
-            color: #1479ff;
-            cursor: pointer;
-            flex-shrink: 0;
-            font-size: 20px;
-            height: 50px;
-            position: relative;
-            transition: .2s;
-            width: 200px;
-            word-break: break-all;
-
-            &:active {
-                box-shadow: 2px 2px 10px #1479ff80;
-                color: #fff;
-            }
-
-            .charge-header-wrap {
-                align-items: center;
-                bottom: 0;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                left: 0;
-                position: absolute;
-                right: 0;
-                top: 0;
-                z-index: 1;
-    
-                .charge-header-icon {
-                    border-radius: 50%;
-                    height: 30px;
-                    margin-right: 6px;
-                    width: 30px;
-                }
-                .charge-header-name {
-                    max-width: 7em;
-                }
-            }
+        &.active {
+            box-shadow: 2px 2px 10px #1479ff80;
+            color: #fff;
         }
 
-        
+        .charge-header__wrap {
+            align-items: center;
+            bottom: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+
+            .charge-header__icon {
+                border-radius: 50%;
+                height: 30px;
+                margin-right: 6px;
+                width: 30px;
+            }
+            .charge-header__name {
+                max-width: 7em;
+            }
+        }
     }
+}
+
+.charge-main {
+    align-items: flex-start;
+    background: linear-gradient(180deg,#e7f3ff,#fff);
+    border: 1px solid #dbe9f8;
+    border-radius: 20px;
+    display: flex;
+    margin-top: 28px;
+    padding: 25px 12px 30px;
+    position: relative;
 }

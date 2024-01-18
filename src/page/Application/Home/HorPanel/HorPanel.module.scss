@@ -16,7 +16,7 @@
     }
 
     .panel-goods {
-        display: flex;
+        // display: flex;
         overflow-x: hidden;
         padding-bottom: 1.3em;
 
@@ -33,7 +33,23 @@
             font-size: 14px;
             line-height: 1.4;
             padding: 20px 10px 10px;
-            width: 110px;
+            width: 110px !important;
+
+            .panel-goods__icon {
+                height: 70px;
+                margin-bottom: 10px;
+                width: 70px;
+            }
+            .panel-goods__title {
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                display: -webkit-box;
+                font-size: 16px;
+                overflow-x: hidden;
+                overflow-y: hidden;
+                text-overflow: ellipsis;
+                word-break: break-all;
+            }
         }
     }
 }
